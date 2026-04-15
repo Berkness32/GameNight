@@ -44,6 +44,17 @@
   border-radius: 10px;
 }
 
+@media (max-width: 768px) {
+  .dropdown-button {
+    min-width: 120px;
+  }
+
+  .dropdown-menu {
+    min-width: 120px;
+    font-size: 0.8rem;
+  }
+}
+
 .dropdown-container.open .dropdown-menu {
   display: flex;
 }

@@ -14,7 +14,10 @@ function Header() {
   return (
     <div className="header-container">
       <Link to="/" className="home-button">
-        <img src="/ladbh.png" alt="LADBH" style={{ height: '40px' }} />
+        <picture>
+          <source srcSet="/ladbh-logo.png" media="(max-width: 768px)" />
+          <img src="/ladbh.png" alt="LADBH" style={{ height: '40px' }} />
+        </picture>
       </Link>
       <div className={`dropdown-container ${isOpen ? 'open' : ''}`}>
         <button className="dropdown-button" onClick={() => setIsOpen(!isOpen)}>
