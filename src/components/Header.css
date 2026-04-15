@@ -48,6 +48,23 @@
   display: flex;
 }
 
+@keyframes glow {
+  0% {
+    text-shadow: 
+      1px 1px blue,
+      -1px -1px red;
+  }
+  50% {
+    text-shadow: 
+      3px 3px blue,
+      -3px -3px red;
+  }
+  100% {
+    text-shadow: 
+      1px 1px blue,
+      -1px -1px red;
+  }
+}
 
 .dropdown-menu a {
   color: white;
@@ -56,9 +73,7 @@
 }
 
 .dropdown-menu a:hover {
-  background-color: #73A6AD;
-  color: black;
-  border-radius: 10px;
+  animation: glow 2s ease-in-out infinite;
 }
 
 .dropdown-menu hr {

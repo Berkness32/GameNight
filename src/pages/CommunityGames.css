@@ -1,0 +1,67 @@
+.community-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.game-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+  background-color: #00273D;
+  color: #C2E9FF;
+  border: 1px solid #C2E9FF;
+  border-radius: 12px;
+  padding: 16px;
+  text-decoration: none
+}
+
+.game-card:hover {
+  filter: drop-shadow(0 0 0.75rem #EBF8FF);
+  cursor: pointer;
+}
+
+.game-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.game-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.game-title {
+  font-family: "Sono", monospace;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.board-game-description {
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .game-card {
+    flex-direction: column;
+  }
+
+  .game-info {
+    padding-top: 10px;
+    margin-top: 10px;
+    border-top: 1px dashed white;
+  }
+
+  .game-title {
+    padding-top: 15px;
+  }
+}

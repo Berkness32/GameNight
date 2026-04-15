@@ -25,12 +25,9 @@ body {
 }
 
 .game-description {
-  max-width: 90%;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 15px;
   width: 800px;
   max-width: 90%;
+  color: white;
   padding: 20px;
 }
 
@@ -51,6 +48,7 @@ body {
 .link-button:hover {
   background-color: black;
   animation: glow 2s ease-in-out infinite;
+  filter: drop-shadow(0 0 0.75rem #EBF8FF);
 }
 
 @keyframes glow {
@@ -72,6 +70,11 @@ body {
 }
 
 .button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.map-container {
   display: flex;
   justify-content: center;
 }
