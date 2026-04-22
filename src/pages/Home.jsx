@@ -5,6 +5,7 @@ function Home() {
   return (
     <div className="home-container">
       <h1 className="page-title">Game Night</h1>
+      <h2 className="page-subtitle">Starting May 5th at Burton Chace Park in the Community Room</h2>
 
       <div>
         <p className="description">
